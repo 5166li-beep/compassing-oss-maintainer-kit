@@ -53,8 +53,17 @@ If this becomes useful to your maintenance workflow after you try it, a GitHub s
 
 ## Development
 
+From a checkout, install the package first, then run the tests:
+
 ```bash
+python -m pip install .
 python -m unittest discover -s tests -v
+```
+
+If you only want to run the tests without installing, use:
+
+```bash
+PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
 Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
